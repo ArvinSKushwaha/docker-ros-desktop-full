@@ -1,5 +1,5 @@
-# ROS Melodic - VNC-enabled Docker container
-Docker container featuring a full ROS Melodic Ubuntu Bionic installation. Quick and easy way to set up ROS in an isolated environment, with convenient HTML5 and VNC to access the desktop environment. Heavily based on [bpinaya's project](https://github.com/bpinaya/robond-docker).
+# ROS Noetic - VNC-enabled Docker container
+Docker container featuring a full ROS Noetic Ubuntu Focal installation. Quick and easy way to set up ROS in an isolated environment, with convenient HTML5 and VNC to access the desktop environment. Heavily based on [bpinaya's project](https://github.com/bpinaya/robond-docker).
 
 ## Setup
 You'll need to install Docker in your computer, if you've used Docker before this step should be straightforward, otherwise check [this link](https://www.docker.com/what-docker) for more information about it.

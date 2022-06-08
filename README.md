@@ -96,7 +96,9 @@ See [the docs](https://docs.docker.com/engine/reference/commandline/cp/) for mor
 - `/root/login`: This just changes the current user to `ubuntu` and move you to `/home/ubuntu`
 - `/home/ubuntu/install_dev_tools`: This just installs some useful tools like `nvim` and `vim`. This is
 	run already when the image was built, so you don't really need to call it, except to update neovim and vim.
-- `/home/ubuntu/upgrade`: This just goes ahead an upgrades all packages on the system. It's a nice little `apt update; apt upgrade` wrapper.
+- `/home/ubuntu/upgrade`: This just goes ahead and upgrades all packages on the system. It's a nice little `apt update; apt upgrade` wrapper.
+- `rossource`: This command can only be called when `ubuntu` is the current user. It sources the `$ROS_WS/devel/setup.bash` file, which by default is
+        located at `/home/ubuntu/ros_ws/devel/setup.bash`
 
 ## Acknowledgements
 

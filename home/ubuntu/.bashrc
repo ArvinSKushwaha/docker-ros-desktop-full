@@ -82,14 +82,10 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-export ROS_WS=/home/ubuntu/ros_ws
+export ROS_WS="/home/ubuntu/ros_ws"
+export DISPLAY=":1"
 
-if command -v nvim &> /dev/null
-then
-    alias vim='nvim'
-fi
-
-alias rossource='source $ROS_WS/devel/setup.bash'
+alias rossource="source $ROS_WS/devel/setup.bash"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ $(id -u) -eq 0 ]
+then
+    echo "This command must not be executed as root"
+    exit 1
+fi
+echo "[INFO] Upgrading system to lastest releases, this may take some time."
+
+sudo apt -q update -y
+sudo apt -q upgrade -y
+
+echo "[INFO] Upgrading complete."

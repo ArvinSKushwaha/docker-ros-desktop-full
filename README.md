@@ -24,10 +24,10 @@ I suggest users pull from Docker Hub instead of building the image themselves. T
 
 This image can now be found on DockerHub [here](https://hub.docker.com/r/arvinskushwaha/ros-noetic-desktop-vnc). To pull this image, do
 ```bash
-$ docker pull arvinskushwaha/ros-noetic-desktop-full
+$ docker pull arvinskushwaha/ros-noetic-desktop-vnc
 ```
 
-In further instructions, when `<tag-name>` is mentioned, use `arvinskushwaha/ros-noetic-desktop-full`.
+In further instructions, when `<tag-name>` is mentioned, use `arvinskushwaha/ros-noetic-desktop-vnc`.
 
 ### From GitHub
 
@@ -38,7 +38,7 @@ In further instructions, when `<tag-name>` is mentioned, use `arvinskushwaha/ros
 $ docker build -t <tag-name> . # The <tag-name> is completely up to you.
 ```
 
-This command will take time. Update, upgrading, and installing `ros-noetic-desktop-full`
+This command will take time. Update, upgrading, and installing `ros-noetic-desktop-vnc`
 takes approximately 30 minutes. The rest of it is rather fast.
 
 ## Creating the Container

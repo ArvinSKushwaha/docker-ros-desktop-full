@@ -18,6 +18,17 @@ Note that below I will be ommitting the usage of `sudo` as a prefix for the dock
 
 ## Pulling the Image
 
+I suggest users pull from Docker Hub instead of building the image themselves. The former tends to take less time, especially if you have fast internet speeds.
+
+### From Docker Hub
+
+This image can now be found on DockerHub [here](https://hub.docker.com/r/arvinskushwaha/ros-noetic-desktop-vnc). To pull this image, do
+```bash
+$ docker pull arvinskushwaha/ros-noetic-desktop-full
+```
+
+In further instructions, when `<tag-name>` is mentioned, use `arvinskushwaha/ros-noetic-desktop-full`.
+
 ### From GitHub
 
 1. Clone the repository. GitHub CLI or Git, both are great!
@@ -29,10 +40,6 @@ $ docker build -t <tag-name> . # The <tag-name> is completely up to you.
 
 This command will take time. Update, upgrading, and installing `ros-noetic-desktop-full`
 takes approximately 30 minutes. The rest of it is rather fast.
-
-### From Docker Hub
-
-As I have not yet added the dockerfile to Docker Hub, this is not possible.
 
 ## Creating the Container
 

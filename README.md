@@ -65,7 +65,7 @@ Check if the docker container is running using `docker ps -a`. If the docker con
 Now, we can enter the "terminal" (or use VNC is preferred). To do this, just execute the following command:
 
 ```bash
-$ docker exec -it <container-name>
+$ docker exec -it <container-name> bash
 root@numbers69420:/root# ./login  # This here is a nice convenience script that I've written for no real reason :)
 ubuntu@id42064:~$ # tada now you're logged in as ubuntu and at /home/ubuntu
 # ...

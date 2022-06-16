@@ -111,5 +111,5 @@ See [the docs](https://docs.docker.com/engine/reference/commandline/cp/) for mor
 
 ## Acknowledgements
 
-- This image is based on [FCWU image](https://github.com/fcwu/docker-ubuntu-vnc-desktop) , that has the support for the VNC server with browser support, so no VNC client is needed, kudos to him!
+- This image is based on [FCWU image](https://github.com/fcwu/docker-ubuntu-vnc-desktop), that has the support for the VNC server with browser support, so no VNC client is needed, kudos to them!
 - A significant portion of this docker container and README is based off of [fbottarel's repo](https://github.com/fbottarel/docker-ros-desktop-full) and [bpinaya's repo](https://github.com/bpinaya/robond-docker)

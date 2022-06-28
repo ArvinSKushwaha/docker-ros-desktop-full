@@ -27,4 +27,5 @@ RUN chown -R ubuntu:ubuntu /home/ubuntu && chmod -R a+rwx /home/ubuntu
 # Creating ROS_WS
 RUN runuser -l ubuntu -c "sudo rosdep init && rosdep update && mkdir -p ~/ros_ws/src && bash ~/install_dev_tools"
 
-CMD su ubuntu
+
+CMD exec /bin/bash -c "trap : TERM INT; sleep infinity & wait"

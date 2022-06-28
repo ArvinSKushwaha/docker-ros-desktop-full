@@ -8,7 +8,8 @@ Docker container featuring a full ROS Noetic Ubuntu Focal installation. Heavily 
 4. [Running the Container](#running-the-container)
 5. [Stopping or Killing the Container](#stopping-or-killing-the-container)
 6. [Updating the Container](#updating-the-container)
-7. [Helper Command Reference](#helper-command-reference)
+7. [Editing in the Container](#editing-in-the-container)
+8. [Helper Command Reference](#helper-command-reference)
 
 ## Installing Docker
 
@@ -99,6 +100,17 @@ I believe `<src-path>` and `<dest-path>` must be such that one is on the host an
 * For a path in the container, it is given as `<container-name>:</path/to/file>`. Similarly, this must be an absolute path and can be either a file or a directory.
 
 See [the docs](https://docs.docker.com/engine/reference/commandline/cp/) for more (and better) info.
+
+## Editing in the Container
+
+With the help of VSCode's [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension, you can edit files in the Docker container. 
+
+1. Just install [the above extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) in your VSCode application.
+2. After starting the container, you can open the command pallette (with Ctrl-Shift-P (or Cmd-Shift-P on Mac))
+3. Search for **Remote-Containers: Attach to Running Container** and select the appropriate container.
+4. In the new window, use as normal. You may have to reinstall some of your extensions.
+
+NOTE: For this to work, the docker command must not require sudo. [See here](https://docs.docker.com/engine/install/linux-postinstall/) for more info. Furthermore, the VSCode instance will instantiate using `root`. I recommend switching to user `ubuntu` for more effective use.
 
 ## Helper Command Reference
 

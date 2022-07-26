@@ -45,7 +45,7 @@ takes approximately 30 minutes. The rest of it is rather fast.
 ## Creating the Container
 
 To create a container from this image, we use the `docker run` command. This command is
-highly configurable, so choose whatever helps your workflow the best! Here, `<tag-name>` is either the Docker Hub image name (once it's on Docker Hub) or whatever you chose [above](#from-github)
+highly configurable, so choose whatever helps your workflow the best! Here, `<tag-name>` is either the Docker Hub image name (`arvinskushwaha/ros-noetic-desktop-vnc`) or whatever you chose [above](#from-github)
 
 Warning! Once you pick a configuration for a container, you're stuck with it. Choose wisely!
 
